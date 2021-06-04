@@ -7,23 +7,29 @@
     <title>pw1</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-/* geral */
-{
+        /* geral */
+*{
     margin: 0;
     padding: 0;
 }
 
+input, label {
+  display: block;
+  width: 35%;
+  margin-top:10%;
+  font: 100px;
+}
+
    body{
-    background-image:url('../img/fundo\ 44w.jpg');
+    padding: 5vh;   
+    background-image:url('../img/fundo\ 15.jpg');
     background-position-y:center ;
     background-size: cover;
     font-family: sans-serif;
-    margin-top: 40px;
-
-    
+    margin-top: -100px;
    }
-   .formulario
-   {
+
+   .formulario{
      width: 800px;
      background-color: #d2d4da6b;
      margin: auto;
@@ -31,9 +37,9 @@
      padding: 10px 0px 10px 0px;
      text-align: center;
      border-radius: 15 px 15px 0px 0px;
-     box-shadow: inset 0 0 1em gold, 0 0 1em red;
-
+     box-shadow: inset 0 0 1em rgba(255, 217, 0, 0), 0 0 1em rgba(255, 0, 0, 0);
    }
+
    .conteudo
  {
     background-color: (0,0,0,0);
@@ -98,39 +104,9 @@
    {
       position: relative;
       color: #E5E5E5E5;
-      text-transform: capitalize;
-      font-size: 14px;
-      left: 169px;
-      top: 045px;
    }
- .email
- {
-   position: relative;
-   left: 200px;
-   top: -37px;
-   line-height: 40px;
-   width: 468px;
-   border-radius: 6px;
-   padding: 0 22px;
-   font-size: 16px;
-   color: #555;
- }
-
- .codigo
- {
-  position: relative;
-   left: 200px;
-   top: -37px;
-   line-height: 40px;
-   width: 95px;
-   border-radius: 6px;
-   padding: 0 22px;
-   font-size: 16px;
-   color: #555;
-
- }
-
- .number
+      
+      .number
  {
   position: relative;
    left: 200px;
@@ -175,96 +151,58 @@
    outline: none;
    overflow: hidden;
 }
-
-
- #main-container {
-     width: 500px;
-     margin-left:auto;
-     margin-right:auto ;
-     background-color: aliceblue;
-     border-radius: 10px;
-     padding: 25px;
- } 
-
-
-form{
-        padding: 10px
-    }
-
-    .full-box{
-        flex: 1 1 100%;
-        position: relative;
-    }
-
-    .full-box{
-        float:1 1 50%;
-        position: relative;
-    }
-
-    .spacing{
-        margin-right:2.5% ;
-    }
-
-    input{
-      border-bottom: 2px solid #c500b5 ;
-      padding: 10px;
-      font-size: .9rem; 
-      margin: bottom 4px;
-  }
-
-input {
-    border-bottom: 1px solid #323232 ;
-    padding: 10px;
-    font-size: 1rem;
-    margin-bottom: 40px;
-}
-
-input:focus {
-      border-color: #d40303f5;
-  }
-
-}
-
-input [type="submit"] {
-      background-color: #3500c5;
-      color:#FFF;
-      border: none;
-      border-radius: 20px;
-      height: 40px;
-      cursor: pointer;
-  }
-
-  #agrement{
-      margin-right: 5px;
-  }
+.opçoes opition 
+{
+  font-size: 20px;
  
-  #agrement, #agrement-label{
-      display:inline-block ;
-      width: auto;
-  }
+}
 
-  /*validation*/
-  ..error-validation {
-      color:#e20d0d;
-      position:absolute;
-      top:57px;
-      font-size: .8rem;
-  }
+.fieldset 
+{
+  border: 0;
+}
 
-  .template{
-      display:none;
-  }
+.label
+{
+  margin-bottom: 0.2em;
+  color: #59429d;
+  display: block;
 
-
-
-  
-
-  
-
-   
-
-   
+}
+   input,select,text, button
+   {
+     border-radius: 5px;
+   }
+   .campo{
+     margin-bottom: 1em;
+   }
+   .campo input[type="text"], .campo input[type="email"], .campo select. .campo text{
+      padding: 0.2em;
+      border: 1px solid #59429d;
+      box-shadow: 2px 2 px 2px rgb(0,0,0,0,2);
+      display: block;
+   }
+   .botao{
+     font-size: 1.2em;
+     background: salmon;
+     border: 0; 
+   }
+button
+{
+  background-color: #3e226d;
+  display: block;
+  margin: 20px 0px 0px 20px;
+  text-align: center;
+  border-radius: 12px;
+  border: 2px solid #6c41bd;
+  padding: 14px 110px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  transition:0.25px;
+}
     </style>
+
 </head>
 <body>
     <div class="formulario"> <h1> Cadastro </h1>
@@ -292,15 +230,13 @@ input [type="submit"] {
                 <h2 class="email">email</h2>
                 <input class="email"  type="text" name="email" >
             </div>       
-            <div class="half-box">
-                <h2 class= "password" >senha</h2>
-                <input class="password"  type="text"   name="password" >
-            </div>    
-            <div class="half-box">
-                <label class="age">idade</label>
-                <input class="age"type="text" name="age">
             
-            <div class="half-box">
+             <div>
+            <h2 class="idade">
+                <label class="age">idade</label>
+                <input class="age"type="number" name="age">
+            
+            <div class="data de nascimento">
                 <h2 class="Date of birth">Data de Nascimento</h2>
                 <input class="Date of birth"   name="Date of birth"> 
             </div>   
@@ -312,125 +248,106 @@ input [type="submit"] {
            <option disabled="disabled" selected="selected"></option>--selecione a opção </div>option>
            <option> Masculino </option>
            <option> Femnnino </option> 
-           
-        </select>  
-         
-    <div>   
-            <h2 class="Nome">Telefone com DDD</h2>
-            <input class="codigo" type="text" name="codigo_area">
-            <label class="codigo_area">DDD </label>
-            <input class="number" type="text" name="phone">
-            <label class="numero-telefone">Telefone</label>
-        </div>   
-            <br>
-            <br>
-            <label for="">Cor preferida</label>
-            <input type="color">
-            <br>
-            <br>
-            <label for="">Facebook</label>
-            <input type="url">
-            <br>
-            <br>
-            <label for="">Instagram</label>
-            <input type="url">
-            <br>
-            <br>
-            <label for="">Estado (UF)</label>
-            <select name="estados-brasil">
-              <option value="AC">Acre</option>
-              <option value="AP">Amapá</option>
-              <option value="AM">Amazonas</option>
-              <option value="BA">Bahia</option>
-              <option value="CE">Ceará</option>
-              <option value="DF">Distrito Federal</option>
-              <option value="ES">Espírito Santo</option>
-              <option value="GO">Goiás</option>
-            <option value="AL">Alagoas</option>
-              <option value="MA">Maranhão</option>
-              <option value="MT">Mato Grosso</option>
-              <option value="MS">Mato Grosso do Sul</option>
-              <option value="MG">Minas Gerais</option>
-              <option value="PA">Pará</option>
-              <option value="PB">Paraíba</option>
-              <option value="PR">Paraná</option>
-              <option value="PE">Pernambuco</option>
-              <option value="RJ">Rio de Janeiro</option>
-              <option value="PI">Piauí</option>
-              <option value="RN">Rio Grande do Norte</option>
-              <option value="RS">Rio Grande do Sul</option>
-              <option value="RO">Rondônia</option>
-            <option value="RR">Roraima</option>
-              <option value="SC">Santa Catarina</option>
-             <option value="SP">São Paulo</option>
-            <option value="MS">Mato Grosso do Sul</option>
-              <option value="SE">Sergipe</option>
-              <option value="TO">Tocantins</option>
-            </select>
-            <br>
-            <br>  
-           </div>   
-           <div>
-            <label for="">Cidade</label>
-            <input type="text">
-            <br>
-            <br>
-            <label for="">Rua</label>
-            <input type="text">
-            <br>
-            <br>
-            <label for="">Número da casa</label>
-            <input type="number">
-            <br>
-            <br>
-            <label for="">Telefone</label>
-            <input type="tel">
-            <br>
-            <br>
-            <label for="">Experiências profissionais</label>
-            <br>
-            <br>
-            <textarea id="SE" name="SE" rows="4" cols="50">
-            </textarea>
-            <br>
-            <br>
-            <fieldset>
-                <legend>Fluências linguísticas</legend>
-                <input type="checkbox" name="" id=""><label for="">Português</label>
-                <br>
-                <br>
-                <input type="checkbox" name="" id=""><label for="">Inglês</label>
-                <br>
-                <br>
-                <input type="checkbox" name="" id=""><label for="">Italiano</label>
-                <br>
-                <br>
-                <input type="checkbox" name="" id=""><label for="">Russo</label>
-    
-            <br>
-            <br>
-                <label for="">Satisfação profissional</label>
-            <input type="range">
-            <br>
-            <br>
-                <label for="">Satisfação pessoal</label>
-            <input type="range">
-            <br>
-            </fieldset>
-    
-            </p>
-            </form>
-    
-           </div>     
-            <div class="half-box">
-                <input type="checkbox" name="agrement" id="agrement">
-                <label for="agrement" id="agrement-label">eu li e aceito os<a href="#"> termos de uso</a/label>
-            </div> 
-            <div class="half-box">
-                <input type="submit"  id="btn-submit" value="registrar">
-        </form>
-        </div>
-        <p class="error-validation template"></p>
-        <script src="js/script.js"></script>
-</body>
-</html>
+           <h2 class="Nome">Telefone com DDD</h2>
+           <input class="codigo" type="text" name="codigo_area">
+           <label class="codigo_area">DDD </label>
+           <input class="number" type="text" name="phone">
+           <label class="numero-telefone">Telefone</label>
+       </div>   
+           <br>
+           <br>
+           <label for="">Cor preferida</label>
+           <input type="color">
+           <br>
+           <br>
+           <label for="">Facebook</label>
+           <input type="url">
+           <br>
+           <br>
+           <label for="">Instagram</label>
+           <input type="url">
+           <br>
+           <br>
+           <label for="">Estado (UF)</label>
+           <select name="estados-brasil">
+             <option value="AC">Acre</option>
+             <option value="AP">Amapá</option>
+             <option value="AM">Amazonas</option>
+             <option value="BA">Bahia</option>
+             <option value="CE">Ceará</option>
+             <option value="DF">Distrito Federal</option>
+             <option value="ES">Espírito Santo</option>
+             <option value="GO">Goiás</option>
+           <option value="AL">Alagoas</option>
+             <option value="MA">Maranhão</option>
+             <option value="MT">Mato Grosso</option>
+             <option value="MS">Mato Grosso do Sul</option>
+             <option value="MG">Minas Gerais</option>
+             <option value="PA">Pará</option>
+             <option value="PB">Paraíba</option>
+             <option value="PR">Paraná</option>
+             <option value="PE">Pernambuco</option>
+             <option value="RJ">Rio de Janeiro</option>
+             <option value="PI">Piauí</option>
+             <option value="RN">Rio Grande do Norte</option>
+             <option value="RS">Rio Grande do Sul</option>
+             <option value="RO">Rondônia</option>
+           <option value="RR">Roraima</option>
+             <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+           <option value="MS">Mato Grosso do Sul</option>
+             <option value="SE">Sergipe</option>
+             <option value="TO">Tocantins</option>
+           </select>
+           <br>
+           <br>  
+          </div>   
+          <div>
+           <label for="">Cidade</label>
+           <input type="text">
+           <br>
+           <br>
+           <label for="">Rua</label>
+           <input type="text">
+           <br>
+           <br>
+           <label for="">Número da casa</label>
+           <input type="number">
+           <br>
+           <br>
+           <label for="">Telefone</label>
+           <input type="tel">
+           <br>
+           <br>
+           <label for="">Experiências profissionais</label>
+           <br>
+           <br>
+           <textarea id="SE" name="SE" rows="4" cols="50">
+           </textarea>
+           <br>
+           <br>
+           <fieldset>
+               <legend>Fluências linguísticas</legend>
+               <input type="checkbox" name="" id=""><label for="">Português</label>
+               <br>
+               <br>
+               <input type="checkbox" name="" id=""><label for="">Inglês</label>
+               <br>
+               <br>
+               <input type="checkbox" name="" id=""><label for="">Italiano</label>
+               <br>
+               <br>
+               <input type="checkbox" name="" id=""><label for="">Russo</label>
+   
+           <br>
+           <br>
+               <label class="">Satisfação profissional</label>
+           <input type="range">
+           <br>
+           <br>
+                   <label for="">Satisfação pessoal</label>
+               <input type="range">
+               <br>
+              </fieldset>
+   </body>
+   </html>
